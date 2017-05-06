@@ -579,7 +579,10 @@ window.addEventListener("DOMContentLoaded", function () {
     map.addLayer({
       "id": "mars-terrain-v1",
       "source": "mars-terrain-v1",
-      "type": "raster"
+      'layout': {
+        'visibility': 'visible'
+      },
+      "type": "background"
     });
   });
 
